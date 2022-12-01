@@ -29,5 +29,6 @@ double my_pow(long num, long deg) {
         }
 
         return result;
+
     }
 }
