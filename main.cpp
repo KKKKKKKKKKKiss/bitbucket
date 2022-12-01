@@ -1,34 +1,16 @@
-double my_pow(long num, long deg) {
+
+double my_pow (double num, long deg) {
     double result = 1;
-    if(deg < 0) {
-        deg = -deg;
-
-        while(deg) {
-            if (deg % 2 == 0) {
-                deg /= 2;
-                num *= num;
-            }
-            else {
-                deg--;
-                result *= num;
-            }
+    while(deg) {
+        if (deg % 2 == 0) {
+            deg /= 2;
+            num *= num;
         }
-
-        return 1 / result;
-    }
-    else {
-        while(deg) {
-            if (deg % 2 == 0) {
-                deg /= 2;
-                num *= num;
-            }
-            else {
-                deg--;
-                result *= num;
-            }
+        else {
+            deg--;
+            result *= num;
         }
-
-        return result;
-
     }
+
+    return result;
 }
