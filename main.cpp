@@ -1,5 +1,5 @@
-long my_pow (long num, long deg) {
-    long result = 1;
+double my_pow (double num, long deg) {
+    double result = 1;
     while(deg) {
         if (deg % 2 == 0) {
             deg /= 2;
